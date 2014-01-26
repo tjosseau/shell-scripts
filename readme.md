@@ -1,17 +1,19 @@
 
 # Utility shell scripts
 
-**Note :** Scripts are developed under the amazing `[Cygwin](http://www.cygwin.com/)` for Windows but are compatible for all shell interpreters.
+**Note :** Scripts are developed under the amazing [Cygwin](http://www.cygwin.com/) for Windows but are compatible for all shell interpreters.
 
-The `Cygwin` or `Unix` flags mean that the script is compatible under those plateform.
+**Caption :**
+* `Cygwin` Windows under Cygwin compatible
+* `Unix` Unix plateforms (Linux and Mac)
 
-## util/colors.sh
+## `util/` colors.sh
 
 __Compatibility :__ `Cygwin` `Unix`
 
 A set of color variables to use in your scripts.
 
-```shell
+```sh
 # Text color
 black="\033[30m"
 red="\033[31m"
@@ -34,4 +36,9 @@ _white="\033[47m"
 
 # Reset all
 _def_="\033[00m"
+```
+
+Example :
+```sh
+echo -e $blue"This is "$green"colored"$blue" text."$_def_
 ```
